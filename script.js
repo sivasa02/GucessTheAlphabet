@@ -1,5 +1,5 @@
 
-var count = 3;
+var count = 5;
 
 var y = String.fromCharCode(Math.floor(Math.random() * 26 + 65)).toLowerCase();
 
@@ -45,7 +45,7 @@ function hide() {
 
  
 
-    count = 3;
+    count = 5;
 
     document.querySelector(".btn").style.display = "none";
 
@@ -85,7 +85,7 @@ function restart() {
 
  
 
-    count = 3;
+    count = 5;
 
     y = String.fromCharCode(Math.floor(Math.random() * 26 + 65)).toLowerCase();
 
