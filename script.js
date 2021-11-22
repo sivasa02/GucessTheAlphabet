@@ -12,7 +12,6 @@ var timeleft = 3;
 
 
 function inputUpdate() {
-
     document.querySelector(".input-container").style.display = "block";
 
     document.querySelector(".input").innerHTML = "";
@@ -174,11 +173,11 @@ function check() {
 
                 if (word < y) {
 
-                    document.querySelector(".words").innerHTML = "Gucessing letter is bigger than " + word.toUpperCase();
+                    document.querySelector(".words").innerHTML = "Guessing letter is bigger than " + word.toUpperCase();
 
                 } else {
 
-                    document.querySelector(".words").innerHTML = "Gucessing letter is smaller than " + word.toUpperCase();
+                    document.querySelector(".words").innerHTML = "Guessing letter is smaller than " + word.toUpperCase();
 
                 }
 
@@ -192,7 +191,7 @@ function check() {
 
 
 
-                document.querySelector(".contents").innerHTML = "OOPS!!! <br> OUT of Gucess The Letter is " + y.toUpperCase();
+                document.querySelector(".contents").innerHTML = "OOPS!!! <br> OUT of Guess The Letter is " + y.toUpperCase();
 
                 document.querySelector(".contents").style.color = "#831111";
 
