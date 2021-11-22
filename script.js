@@ -5,11 +5,11 @@ var y = String.fromCharCode(Math.floor(Math.random() * 26 + 65)).toLowerCase();
 
 var word = document.querySelector(".input").value;
 
- 
+
 
 var timeleft = 3;
 
- 
+
 
 function inputUpdate() {
 
@@ -27,11 +27,11 @@ function inputUpdate() {
 
 }
 
- 
+
 
 function gucessUpdate() {
 
- 
+
 
     document.querySelector(".gucess").style.display = "block";
 
@@ -39,11 +39,11 @@ function gucessUpdate() {
 
 }
 
- 
+
 
 function hide() {
 
- 
+
 
     count = 5;
 
@@ -61,11 +61,11 @@ function hide() {
 
 }
 
- 
+
 
 function start() {
 
- 
+
 
     document.querySelector(".input-container").style.display = "none";
 
@@ -79,17 +79,17 @@ function start() {
 
 }
 
- 
+
 
 function restart() {
 
- 
+
 
     count = 5;
 
     y = String.fromCharCode(Math.floor(Math.random() * 26 + 65)).toLowerCase();
 
- 
+
 
     document.querySelector(".gucess").style.display = "none";
 
@@ -101,31 +101,30 @@ function restart() {
 
 }
 
- 
+
 
 function counter() {
 
- 
 
-    window.setTimeout(function() {
 
- 
+    window.setTimeout(function () {
+
 
         inputUpdate();
 
         document.querySelector(".result").style.display = "none";
 
-   }, 3000);
+    }, 3000);
 
- 
+
 
 }
 
- 
+
 
 function wrongUpdate() {
 
- 
+
 
     document.querySelector(".result").style.display = "block"
 
@@ -139,23 +138,23 @@ function wrongUpdate() {
 
 }
 
- 
+
 
 function check() {
 
- 
+
 
     word = document.querySelector(".input").value;
 
     timeleft = 3;
 
- 
+
 
     if (word.toLowerCase() >= 'a' && word.toLowerCase() <= 'z') {
 
- 
 
- 
+
+
 
         if (word.toLowerCase() === y && count > 0) {
 
@@ -165,7 +164,7 @@ function check() {
 
             document.querySelector(".contents").style.color = "#1155ff";
 
- 
+
 
         } else {
 
@@ -175,7 +174,7 @@ function check() {
 
                 if (word < y) {
 
-                    document.querySelector(".words").innerHTML = "Gucessing letter is smaller than " + word.toUpperCase();
+                    document.querySelector(".words").innerHTML = "Gucessing letter is bigger than " + word.toUpperCase();
 
                 } else {
 
@@ -191,13 +190,15 @@ function check() {
 
             } else {
 
-                restart();
+
 
                 document.querySelector(".contents").innerHTML = "OOPS!!! <br> OUT of Gucess The Letter is " + y.toUpperCase();
 
                 document.querySelector(".contents").style.color = "#831111";
 
- 
+
+
+                restart();
 
             }
 
@@ -211,7 +212,7 @@ function check() {
 
         document.querySelector(".validate").innerHTML = "Enter a Valid Input"
 
-        setTimeout(function() {
+        setTimeout(function () {
 
             document.querySelector(".validate").style.display = "none"
 
@@ -221,7 +222,7 @@ function check() {
 
 }
 
- 
+
 
 function countCheck() {
 
@@ -233,7 +234,7 @@ function countCheck() {
 
         //restart();
 
- 
+
 
     } else {
 
@@ -243,4 +244,4 @@ function countCheck() {
 
 }
 
- 
+
