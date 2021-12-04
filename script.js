@@ -171,7 +171,7 @@ function check() {
 
             if (count > 0) {
 
-                if (word < y) {
+                if (word.toLowerCase() < y.toLowerCase()) {
 
                     document.querySelector(".words").innerHTML = "Guessing letter is bigger than " + word.toUpperCase();
 
